@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/model0.jpg);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    padding: 0 7%;
+    transition: background-image 1s;
+}
+.logo{
+    margin-top: 10px;
+    height: 90px;
+    cursor: pointer;
+}
+.active_nav{
+    z-index: 999;
+    background-color: #797979;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+nav ul{
+    flex: 1;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.info{
+    width: 100%;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}
+.info div{
+    margin: 0 20px;
+}
+.info div h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+.info .line{
+    flex: 1;
+    background: #fff;
+    height: 4px;
+}
+#model{
+    font-size: 44px;
+    font-weight: 400;
+}
+
+
+
+.btn_buy{
+    display: flex;
+    flex-direction: column;
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-top: 1.875rem;
+    margin-bottom: 3.25rem;
+    text-align: center;
+
+}
+
+.home__selector-action-btn{
+    text-decoration: none;
+    background-color: #394144;
+    color: #fff;
+    margin: 10px;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+.btn{
+    text-decoration: none;
+    background-color: #394144;
+    color: #fff;
+    margin: 10px;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 40px;
+    
+}
+.btn1{
+    text-decoration: none;
+    background-color: rgb(8, 223, 48);
+    color: #fff;
+    margin: 10px;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 40px;
+    font-size: 14px;
+    
+}
+.btn_buy p{
+    font-size: 20px;
+    color:#394144;
+}
+.btn_buy a:nth-child(2){
+    color: green;
+}
+
+
+.detail{
+
+    background: #394144;
+    padding: 10px;
+    left: 0;
+    width: 100%;
+}
+.detail_list{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+.detail h1{
+    padding-top: 2%;
+}
+.detail_list_items h3{
+    padding-top: 10px;
+    color: #9CA0A2;
+}
+.detail_list_items h2{
+    color: #fff;
+}
+.vehicle-features__list{
+    margin-top: 10px;
+    margin-bottom: 13px;
+    column-count: 2;
+    margin-right: 20%;
+    margin-left: 2%;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+      
+}
+.vehicle-features__list li{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    line-height: 1.875rem;
+}
+.vehicle-features__list li::before{
+    content: "\2022";
+  color: rgb(100, 100, 100);
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+h1{
+    color: #fff;
+}
+
+.bottom{
+    margin-top: 5%;
+    color: #ACBFC4;
+    background-color: #232629;
+    height: 100px;
+    bottom: 0%;
+    left: 0%;
+}
+.bottom p{
+    text-align: center;
+    line-height: 100px;
+}
+body{
+    background-color: #ACBFC4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    padding-top: 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  
+  
+  .container {
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+  .head{
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 700px;
+  }
+
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+ 
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }

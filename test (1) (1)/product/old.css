@@ -1,0 +1,818 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #0D0D0D;
+    user-select: none;
+  }   
+  
+  .header {
+    z-index: 999;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    user-select: none;
+    transition: 0.3s ease-in-out ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5%;
+  }
+  
+  .nav-list-item-icon {
+    
+    height: 100%;
+  }
+  
+  .nav{
+  
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .nav-list-input{
+    padding-bottom: 5px;
+    font-size: 25px;
+    border-radius: 25px;
+  }
+  .nav-list-btn{
+    padding: 4px;
+    background: #009688;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  /* .nav:nth-child(2){
+  
+  } */
+  
+  .icon{
+    display: block;
+    float: right;
+    line-height: 80px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .nav-list-btn-icon {
+  background-color: #009688;
+  }
+  .logo{
+    color: white;
+  
+    /* line-height: 80px; */
+    
+  }
+  .logo img{
+    
+    margin: auto;
+    padding: auto;
+    height: 70px;
+    
+  }
+  .active_nav{
+    z-index: 999;
+    background-color: #797979;
+  }
+  .active_nav a{
+    color: #c6c3c3;
+    box-shadow: rgba(0,0 , 0,.6 );
+  }
+  .active_nav button{
+    color: #c6c3c3;
+    box-shadow: rgba(0,0 , 0,.6 );
+  }
+  .active_nav button:hover{
+    color: #000000;
+  }
+  .active_nav a:hover{
+    color: #000000;
+  }
+  .active_nav .logo{
+    color: #000000;
+  }
+  
+  .navbar{
+    float: right;
+    
+  }
+  nav ul li{
+    position: relative;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+  }
+  .ul{
+    margin-right: 10%;
+    margin-left: 2px;
+  }
+  nav li a{
+    text-decoration: none;
+    /* color: white; */
+    font-size: 19px;
+    text-transform: uppercase;
+  }
+  nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #16cdf7;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 30%;
+    transition: 0.5s;
+  }
+  nav ul li:hover:after{
+    width: 100%;
+  }
+  button{
+    padding: 5px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.50),rgba(0,0,0,0.1)),url(/img/mercedes-benz-pullman.webp);
+    background-position: center;
+    background-size: cover;
+  }
+  .htext{
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  .htext button{
+    width: 150px;
+    text-align: center;
+    padding: 15px 0;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .htext button:hover{
+    background-color: #009688;
+    border: solid 2px #fff;
+  
+  
+  }
+  /* .htext button:active{
+    background-color: #fff;
+  } */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .content{
+    position: relative;
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  .content h1{
+    text-transform: uppercase;
+  }
+  .content h3{
+    font-weight: bold;
+    
+  }
+  .content p{
+    padding-top:10px ;
+    font-size: 19px;
+  }
+  .row{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .collum{
+    flex-basis: 37%;
+    background-color: #009688;
+    opacity: 0.5;
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    margin: 3%;
+    user-select: none;
+  }
+  .content > .row > .collum:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  
+  .product{
+    margin: auto;
+    margin-top: 100px;
+    color:  white;
+    width: 80%;
+    text-align: center;
+  }
+  .product h2{
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .procoll{
+    color: #000000;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  
+    margin: 5%;
+    background-position: center;
+    
+  }
+  .collum.img{
+    
+    width: 100%;
+    height: 100%;
+  }
+  .layer{
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+  .layer:hover{
+    background: rgba(20, 18, 18, 0.6)    ;
+  
+  }
+  .layer h2{
+    color: #d6d6d6;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .layer p{
+    
+    color: #d4d4d4;
+    line-height: 35px;
+    font-size: 18px;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .layer:hover p{
+    bottom: 29%;
+    opacity: 1;
+  }
+  .seemore{
+    color: #fff1f1;
+    line-height: 35px;
+    font-size: 18px;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .layer:hover .seemore{
+    bottom: 5%;
+    opacity: 0.6;
+  }
+  .layer:hover h2{
+    top: 10%;
+    opacity: 1;
+  }
+  .product button{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    margin: 20px 10px;
+    border-radius: 11px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.1s;
+    position: relative;
+    text-transform: uppercase;
+  }
+  span{
+    content: '';
+    height: 100%;
+    width: 0%;
+    background: #fffafa;
+    position: absolute;
+    left: 0%;
+    border-radius: 11px;
+    /* right: 0%; */
+    bottom: 0%;
+    transition: 0.5s;
+    z-index: -1;
+  }
+  a{
+   text-decoration: none;
+   color: white;
+  }
+  .product button:hover span{
+    width: 100%;
+  }
+  .product button:hover {
+    color: #000000;
+  }
+  
+  
+  
+  
+  .btext{
+    margin-top: 25vh;
+    margin-bottom: 1vh;
+    position: relative;
+    color: #fff;
+    width: 35%;
+    bottom: 0%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  .b1{
+    width: 100%;
+    height: 65vh;
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.2),rgba(0,0,0,0.2)),url(img/chevrolet-1697962421094-486.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    
+  }
+  .inpic{
+    color: white;
+  }
+  .bottom-right {
+    background-color: #fff;
+    color: #000000;
+    width:fit-content;
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    display: none;
+    transition: 0.5s;
+  }
+  .bottom-left{
+    
+    margin: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    display: none;
+  }
+  .bottom-left button{
+    
+    background-color: #797979;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+  }
+  .bottom-left button:hover{
+    background-color: white;
+  }
+  .bottom-right div{
+    margin: 10px;
+  }
+  
+  .b1:hover .bottom-right{
+    transition: 0.5s;
+    display: block;
+  }
+  .b1:hover .bottom-left{
+    display: block;
+  }
+  
+  .b2text{
+    margin-top: 10vh;
+    margin-bottom: 1vh;
+    position: relative;
+    color: #fff;
+    width: 35%;
+    bottom: 0%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  .b2{
+    
+    width: 100%;
+    height: 65vh;
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.2),rgba(0,0,0,0.2)),url(img/bmw.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    
+  }
+  .b2:hover .bottom-right{
+    transition: 0.5s;
+    display: block;
+  }
+  .b2:hover .bottom-left{
+    display: block;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 940px){
+    .icon{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .logo{
+        display: none;
+    }
+    .nav-list-input{
+        display: none;
+    }
+    .nav-list-btn-icon{
+        display: none;
+    }
+  }
+  
+  
+  @media screen and (max-width: 800px){
+    .row{
+        flex-direction: column;
+    }
+    
+    .nav{
+        flex-direction: column;
+        font-size: small;
+        height: fit-content;
+    }
+    .nav-list-input{
+        width: 200px;
+    }
+    nav{
+        height: fit-content;
+        overflow: hidden;
+    }
+    .nav-list-input{
+        display: none;
+    }
+    .nav-list-btn-icon{
+        display: none;
+    }
+    .nav ul li{
+        margin: 4px;
+    }
+    /* nav ul li{
+        display: block;
+        font-size: 10px;
+        line-height: 40px;
+    }
+    nav ul li a{
+        display: block;
+        font-size: 15px;
+        
+    }
+    nav ul{
+        display: inline;
+        padding: auto;
+    }
+    nav{
+        height: fit-content;
+    } */
+   
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .gotop{
+    height: 70px;
+    border: solid 3px #7a7a7a;
+  }
+  .gotop button{
+    bottom: 24%;
+    width: auto;
+    text-align: center;
+    padding: 15px 0;
+    margin: 20px 10px;
+    border: transparent;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.1s;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  .bottom{
+    
+    color: #ACBFC4;
+    background-color: #232629;
+    height: 100px;
+    bottom: 0%;
+    left: 0%;
+  }
+  .bottom p{
+    text-align: center;
+    line-height: 100px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .buttonon {
+    background-color: transparent;
+    background: none;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    font-size: 19px;
+    text-transform: uppercase;
+  }
+  
+  
+  
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  .add{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #00fc22;
+    color: #000;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    
+  }
+  
+  img.avatar {
+    width: 20%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+    padding-left: 40px;
+    padding-right: 50px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);/* Black w/ opacity */
+    padding-top: 60px;
+    
+  }
+  .modal p{
+    padding-left: 25px;
+    font-size: 20px;
+    color: #797979;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .modal label{
+    font-size: 20px;
+  }
+  .balance{
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .modal p::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #16cdf7;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  
+  .search-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #search-bar {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  .suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    display: none;
+  }
+  
+  .suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f2f2f2;
+  }
+  
+  
+  
+  
+  
